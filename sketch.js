@@ -2,14 +2,16 @@
 let vf;
 let ball;
 
-
+let myCanvas;
 function setup() {
-  createCanvas(windowWidth, windowHeight, WEBGL);
-  vf = new VectorField(V, 5.0);
+  myCanvas = createCanvas(windowWidth, windowHeight*0.9, WEBGL);
+  myCanvas.parent("myCanvas");
+  vf = new VectorField(E, 5.0);
   vf.Lenght *= 0.1;
   vf.scaleSpace(0.25);
   vf.ArrowDensity= 8;
-  ball = new PointParticle(V);
+  ball = new PointParticle(E);
+  ball.timeScale *= 0.5;
 }
 
 function draw() {
@@ -27,10 +29,36 @@ function draw() {
   ball.show();
 }
 
-function V(P) {
+function E(P) {
   let Vx = P.y+1;
   let Vy = -P.x;
   let Vz = P.z;
 
   return createVector(Vx, Vy, Vz);
+}
+
+function keyPressed(){
+  if(key === 'f'){
+    ball.free = true;
+  }
+  if(key === 'F'){
+    ball.free = false;
+  }
+  // if(key === 'x'){
+  //   ball.moveX(mouseX - width/2);
+  // }
+  // if(key === 'y'){
+  //   ball.moveY(mouseX - width/2);
+  // }
+  // if(key === 'z'){
+  //   ball.moveZ(mouseX - width/2);
+  // }
+  
+  if(keyCode === UP_ARROW) ball.Up();
+  if(keyCode === DOWN_ARROW) ball.Down();
+  if(keyCode === LEFT_ARROW) ball.Left();
+  if(keyCode === RIGHT_ARROW) ball.Right();
+  if(key === '+') ball.Forward();
+  if(key === '-') ball.Backward();
+  if(key === 'r') ball.Reset();
 }
