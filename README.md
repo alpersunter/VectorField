@@ -1,3 +1,3 @@
-# alpersunter.github.io
+# randomnotlar.github.io
 
 Özgür Hoca için elektrik alanda yükün davranışı.
