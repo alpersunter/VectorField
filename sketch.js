@@ -1,6 +1,6 @@
 let roboto;
 let vf;
-
+let ball;
 function preload() {
   roboto = loadFont("assets/roboto.ttf");
 }
@@ -16,9 +16,17 @@ function setup() {
   vf.Lenght *= 0.1;
   vf.scaleSpace(0.25);
   vf.ArrowDensity= 8;
+
+  ball = new PointParticle(V);
 }
 
 function draw() {
+
+  // P noktasına bırakılan bir top, vekörleri hızı kabul etsin ve ona göre hareket etsin
+
+
+
+
   orbitControl();
   background(20);
   axes(false);
@@ -28,10 +36,14 @@ function draw() {
   vf.show();
   pop();
   noFill();
+
+  ball.update();
+ ball.show();
+
 }
 
 function V(P) {
-  let Vx = P.y;
+  let Vx = P.y+1;
   let Vy = -P.x;
   let Vz = P.z;
 
