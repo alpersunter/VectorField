@@ -63,10 +63,7 @@ function axes(planesVisible) {
     // XY PLANE: XYZ = RGB so XY plane will be REDGREEN
     fill(255, 255, 0, 30);
     rect(-width / 2, -height / 2, width, height);
-    fill(255, 0, 0, 200);
-    text("+X", width / 6.0, -30);
-    fill(0, 255, 0, 200);
-    text("+Y", 30, width / 6.0);
+    
 
     // ZX PLANE: ZX plane will ve REDBLUE
     push();
@@ -81,8 +78,7 @@ function axes(planesVisible) {
     rotateY(HALF_PI);
     fill(0, 255, 255, 30);
     rect(-width / 2, -height / 2, width, height);
-    fill(0, 0, 255, 200);
-    text("+Z", -width / 6.0, -30);
+    
     pop();
 
   }
@@ -111,21 +107,3 @@ function axes(planesVisible) {
 
   pop();
 }
-
-
-// AŞAĞIDAKİ FONKSİYON ARTIK VectorField.js dosyasında, classın yapısında bir method.
-
-// function drawVectorField(VectorField, ArrowDensity, Lenght) {
-//   // ekrana ilgili ok yoğunluğuna sahip bir biçimde vector field'ı çizdir
-
-//   for (let i_x = MIN_X; i_x <= MAX_X; i_x += (MAX_X - MIN_X) / ArrowDensity) {
-//     for (let i_y = MIN_Y; i_y <= MAX_Y; i_y += (MAX_Y - MIN_Y) / ArrowDensity) {
-//       for (let i_z = MIN_Z; i_z <= MAX_Z; i_z += (MAX_Z - MIN_Z) / ArrowDensity) {
-//         push();
-//         translate(i_x, i_y, i_z);
-//         VectorField(createVector(i_x, i_y, i_z)).normalize().mult(Lenght).draw();
-//         pop();
-//       }
-//     }
-//   }
-// }
