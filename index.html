@@ -1,21 +1,40 @@
 <html>
-  <head>
-    <script src="p5.js"></script>
-    <script src="SpaceCodes.js"></script>
-    <script src="VectorField.js"></script>
-    <script src="PointParticle.js"></script>
-    <script src="sketch.js"></script>
-    <style>
+
+<head>
+  <script src="p5.js"></script>
+  <script src="SpaceCodes.js"></script>
+  <script src="VectorField.js"></script>
+  <script src="PointParticle.js"></script>
+  <script src="sketch.js"></script>
+  <style>
     body {
-    margin: 0;
-    padding: 0;
-}
-canvas {
-    display: block;
-}
-    
-    </style>
-  </head>
-  <body>
-  </body>
+      margin: 0;
+      padding: 0;
+    }
+
+    canvas {
+      display: block;
+    }
+    #info{
+      height: 10%;
+      width: 100%;
+      background-color: black;
+      -webkit-text-stroke-color: azure;
+      -webkit-text-fill-color: azure;
+      text-align: center;
+      font-size: 25;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="info">
+    "f" tusu ile top icin zaman durur.</br>
+    Zaman durdugunda "r" ile top merkeze tasinir, yon oklari ve "+", "-" ile uzayda konumu ayarlanir.</br>
+    Zaman "F" (Shift + "f") ile devam eder.
+  </div>
+  <div id="myCanvas"> </div>
+
+</body>
+
 </html>
