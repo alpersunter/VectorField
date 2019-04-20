@@ -15,7 +15,6 @@ function setup() {
 }
 
 function draw() {
-  // P noktasına bırakılan bir top, vekörleri hızı kabul etsin ve ona göre hareket etsin
   orbitControl();
   background(20);
   axes(false);
@@ -44,15 +43,7 @@ function keyPressed(){
   if(key === 'F'){
     ball.free = false;
   }
-  // if(key === 'x'){
-  //   ball.moveX(mouseX - width/2);
-  // }
-  // if(key === 'y'){
-  //   ball.moveY(mouseX - width/2);
-  // }
-  // if(key === 'z'){
-  //   ball.moveZ(mouseX - width/2);
-  // }
+
   
   if(keyCode === UP_ARROW) ball.Up();
   if(keyCode === DOWN_ARROW) ball.Down();
@@ -61,4 +52,6 @@ function keyPressed(){
   if(key === '+') ball.Forward();
   if(key === '-') ball.Backward();
   if(key === 'r') ball.Reset();
+  if(key ==='a') ball.timeScale *= 0.5;
+  if(key ==='q') ball.timeScale *= 2.0;
 }

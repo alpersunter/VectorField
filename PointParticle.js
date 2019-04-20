@@ -34,6 +34,8 @@ class PointParticle{
         push();
         translate(this.locationVector);
         noStroke();
+        fill(0,255,0,200);
+        arrow3D(this.Velocity.normalize().mult(50));
         fill(255, 255, 255, 200);
         sphere(height/50.0);
         pop();
