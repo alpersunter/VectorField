@@ -4,7 +4,7 @@ let ball;
 
 let myCanvas;
 function setup() {
-  myCanvas = createCanvas(windowWidth, windowHeight*0.9, WEBGL);
+  myCanvas = createCanvas(windowWidth*0.9, windowHeight, WEBGL);
   myCanvas.parent("myCanvas");
   vf = new VectorField(E, 5.0);
   vf.Lenght *= 0.1;

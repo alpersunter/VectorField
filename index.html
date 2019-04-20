@@ -15,23 +15,69 @@
     canvas {
       display: block;
     }
-    #info{
-      height: 10%;
-      width: 100%;
+
+    #info {
+      height: 100%;
+      width: 10%;
       background-color: black;
-      -webkit-text-stroke-color: azure;
+      
+      
+    }
+
+    img {
+      position: relative;
+      max-width: 100%;
+    }
+
+    table {
+      position: relative;
+      max-width: 100%;
       -webkit-text-fill-color: azure;
       text-align: center;
-      font-size: 25;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size:large;
+    }
+    div{
+      position:relative;
+      float:left;
     }
   </style>
 </head>
 
 <body>
   <div id="info">
-    "f" tusu ile top icin zaman durur.</br>
-    Zaman durdugunda "r" ile top merkeze tasinir, yon oklari ve "+", "-" ile uzayda konumu ayarlanir.</br>
-    Zaman "F" (Shift + "f") ile devam eder. "q" ile zaman hizlanir; "a" ile yavaslar.
+    <table>
+      <tr>
+        <td>Freeze-Release</td>
+      </tr>
+      <tr>
+        <td><img src="keys/freeze-release.png" alt="" /></td>
+      </tr>
+      <tr>
+        <td>Slower-Faster</td>
+      </tr>
+      <tr>
+        <td><img src="keys/aq.png" alt="" /></td>
+      </tr>
+      <tr>
+        <td>Bring to center</td>
+      </tr>
+      <tr>
+        <td><img src="keys/r.png" alt="" /></td>
+      </tr>
+      <tr>
+        <td>Move (if frozen)</td>
+      </tr>
+      <tr>
+        <td><img src="keys/uzayda.png" alt="" /></td>
+      </tr>
+      <tr>
+          <td>Click, drag and scroll!</td>
+        </tr>
+        <tr>
+          <td><img src="keys/drag.png" alt="" /></td>
+        </tr>
+    </table>
   </div>
   <div id="myCanvas"> </div>
 
