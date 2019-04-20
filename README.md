@@ -1,3 +1,3 @@
-# alpersunter.github.io/VwctorField/
+# alpersunter.github.io/VectorField/
 
 Behavior of +1C charge in electrical field.
