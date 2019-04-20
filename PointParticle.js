@@ -9,7 +9,7 @@ class PointParticle{
         this.Charge = +1.0;
         this.Mass = +1.0;
         this.free = false;
-        this.timeScale = 1.0;
+        this.timeScale = 0.5;
     }
 
     // force is a vector
