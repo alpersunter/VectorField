@@ -1,3 +1,3 @@
-# randomnotlar.github.io
+# alpersunter.github.io/VwctorField/
 
-Elektrik alanda yükün davranışı.
+Behavior of +1C charge in electrical field.
