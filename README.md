@@ -6,7 +6,7 @@ My original intention was to create animations about curl and divergence. Then I
     - Mass
     - Radius
     - Electrical charge
-    - Time speed
+    - Time scale (1.0 being real time, timeScale > 1 makes physics faster, timeScale < 1 makes physics slower)
 
   - VectorField.js: For a given vector function V, draws samples of V in some part of the space.
     - Vector function
