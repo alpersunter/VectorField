@@ -6,11 +6,11 @@ My original intention was to create animations about curl and divergence. Then I
 
   ## PointParticle.js
   Defines a simple point particle.
-    - Mass
-    - Radius
-    - Electrical charge
-    - Force field
-    - Time scale (1.0 being real time, timeScale > 1 makes physics faster, timeScale < 1 makes physics slower)
+   - Mass
+   - Radius
+   - Electrical charge
+   - Force field
+   - Time scale (1.0 being real time, timeScale > 1 makes physics faster, timeScale < 1 makes physics slower)
     
    ### Example Code
     
@@ -45,10 +45,10 @@ My original intention was to create animations about curl and divergence. Then I
 
   ## VectorField.js
   For a given vector function V, draws samples of V in some part of the space.
-    - Vector function
-    - X, Y, Z limits
-    - Arrow length
-    - Arrow density
+   - Vector function
+   - X, Y, Z limits
+   - Arrow length
+   - Arrow density
 
   ## SpaceCodes.js
   Useful codes for drawing in space.
