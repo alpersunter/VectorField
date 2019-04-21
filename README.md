@@ -11,7 +11,9 @@ My original intention was to create animations about curl and divergence. Then I
     - Electrical charge
     - Force field
     - Time scale (1.0 being real time, timeScale > 1 makes physics faster, timeScale < 1 makes physics slower)
-    ### Example Code
+    
+   ### Example Code
+    
     ```
     // ForceField(vector) returns another vector
     let ForceField = (vec) => createVector(vec.x, -vec.y, 0);
@@ -39,7 +41,6 @@ My original intention was to create animations about curl and divergence. Then I
     testParticle.Right(); // positive x
     testParticle.Forward(); // positive z
     testParticle.Backward(); // negative z
-    
     ```
 
   ## VectorField.js
@@ -49,8 +50,9 @@ My original intention was to create animations about curl and divergence. Then I
     - Arrow length
     - Arrow density
 
-  - SpaceCodes.js: Useful codes for drawing in space.
-    - `PointYTo(vec)` rotates XYZ axes so that new Y axis is now pointing along vector vec (which coordinates are with respect to space prior to rotations).
-    - `arrow3D(vec)` draws an arrow for a given vector.
-    - `axes(planesVisible)` draws X, Y and Z axes with the option to show XY YZ XZ planes (axes(true) or axes(false))
+  ## SpaceCodes.js
+  Useful codes for drawing in space.
+   - `PointYTo(vec)` rotates XYZ axes so that new Y axis is now pointing along vector vec (which coordinates are with respect to space prior to rotations).
+   - `arrow3D(vec)` draws an arrow for a given vector.
+   - `axes(planesVisible)` draws X, Y and Z axes with the option to show XY YZ XZ planes (axes(true) or axes(false))
     
