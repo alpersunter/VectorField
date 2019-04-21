@@ -1,6 +1,8 @@
-# alpersunter.github.io/VectorField/
+# 3D Vector Field Project: Point Charge in Electric Field
 
 My original intention was to create animations about curl and divergence. Then I found myself playing with force fields.
+
+alpersunter.github.io/VectorField/
 
   - PointParticle.js: Defines a simple point particle.
     - Mass
