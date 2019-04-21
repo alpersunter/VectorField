@@ -2,7 +2,7 @@
 
 My original intention was to create animations about curl and divergence. Then I found myself playing with force fields.
 
-alpersunter.github.io/VectorField/
+[Live Demo](alpersunter.github.io/VectorField/)
 
   - PointParticle.js: Defines a simple point particle.
     - Mass
